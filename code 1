@@ -1,0 +1,411 @@
+1.. Create a simple HTML page displaying personal details using text formatting tags. 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Personal Details</title> 
+</head> 
+<body> 
+     <h1><u>My Personal Details</u></h1> 
+    <p><b>Name:</b> John Doe</p> 
+    <p><strong>Age:</strong> 21</p> 
+    <p><i>Course:</i> Bachelor of Science in Computer Science</p> 
+    <p><em>College:</em> XYZ University</p> 
+    <p><u>Email:</u> johndoe@example.com</p> 
+    <h2>About Me</h2> 
+    <p> 
+        Hello! My name is <b>John Doe</b>. I am a <i>computer science student</i>  
+        who loves <strong>coding</strong> and <em>learning new technologies</em>. 
+    </p> 
+</body> 
+</html> 
+ 
+ 
+ 
+ 
+ 
+2.. Design a web page that includes an image, hyperlink, and a nested table. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Web Page with Image, Link, and Nested Table</title> 
+</head> 
+<body> 
+    <h1>My Sample Web Page</h1> 
+    <!-- Image --> 
+    <h2>My Image</h2> 
+    <img src="https://via.placeholder.com/150" alt="Sample Image"> 
+    <!-- Hyperlink --> 
+    <h2>Visit a Website</h2> 
+    <p> 
+        Click here to visit  
+        <a href="https://www.google.com" target="_blank">Google</a> 
+    </p> 
+    <!-- Nested Table --> 
+    <h2>Student Details</h2> 
+    <table border="1" cellpadding="10"> 
+        <tr> 
+            <th>Name</th> 
+            <th>Subjects & Marks</th> 
+        </tr> 
+        <tr> 
+            <td>John Doe</td> 
+            <td> 
+                <!-- Nested Table --> 
+                <table border="1" cellpadding="5"> 
+                    <tr> 
+                        <th>Subject</th> 
+                        <th>Marks</th> 
+                    </tr> 
+                    <tr> 
+                        <td>Mathematics</td> 
+                        <td>85</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Computer Science</td> 
+                        <td>92</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Physics</td> 
+                        <td>78</td> 
+                    </tr> 
+                </table> 
+            </td> 
+        </tr> 
+    </table> 
+</body> 
+</html> 
+ 
+3.. Create a form with fields: name, email, gender, date of birth, and submit button. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Simple Form</title> 
+</head> 
+<body> 
+<h2>Registration Form</h2> 
+<form> 
+    <!-- Name --> 
+    <label for="name">Full Name:</label><br> 
+    <input type="text" id="name" name="name" placeholder="Enter your name" 
+required><br><br> 
+    <!-- Email --> 
+    <label for="email">Email:</label><br> 
+    <input type="email" id="email" name="email" placeholder="Enter your email" 
+required><br><br> 
+    <!-- Gender --> 
+    <label>Gender:</label><br> 
+    <div> 
+        <label><input type="radio" name="gender" value="Male"> Male</label><br> 
+        <label><input type="radio" name="gender" value="Female"> Female</label><br> 
+        <label><input type="radio" name="gender" value="Other"> Other</label> 
+    </div><br> 
+    <!-- Date of Birth --> 
+    <label for="dob">Date of Birth:</label><br> 
+    <input type="date" id="dob" name="dob" required><br><br> 
+<!-- Submit --> 
+<button type="submit">Submit</button> 
+</form> 
+</body> 
+</html> 
+Apply internal, external, and inline CSS to style a web page with headings and tables. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>CSS Example</title> 
+    <!-- Internal CSS --> 
+    <style> 
+        body { 
+            font-family: Arial; 
+            background-color: white; 
+        } 
+        h1 { 
+            text-align: center; 
+        } 
+        table { 
+            width: 50%; 
+            margin:auto; 
+        } 
+        th, td { 
+            border: 1px solid black; 
+            padding: 10px; 
+            text-align: center; 
+        } 
+        th { 
+            background-color: lightgray; 
+        } 
+    </style> 
+    <!-- External CSS --> 
+    <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+    <!-- Inline CSS --> 
+    <h1 style="color: blue">Student Information</h1> 
+    <table> 
+        <tr> 
+            <th>Name</th> 
+            <th>Marks</th> 
+        </tr> 
+        <tr> 
+            <td>Amit</td> 
+            <td>85</td> 
+        </tr> 
+        <tr> 
+            <td>Priya</td> 
+            <td>90</td> 
+        </tr> 
+    </table> 
+</body> 
+</html> 
+ 
+ 
+ 
+h1 { 
+font-family: Verdana; 
+} 
+table { 
+border: 5px solid black; 
+background-color: yellow; 
+} 
+Develop a responsive web page using Bootstrap Grid and Components. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Bootstrap Example</title> 
+    <!-- Bootstrap CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+rel="stylesheet"> 
+</head> 
+<body> 
+<!-- Heading --> 
+<div class="container text-center mt-3"> 
+    <h1>My Web Page</h1> 
+</div> 
+<!-- Grid --> 
+<div class="container mt-4"> 
+    <div class="row"> 
+        <div class="col-md-4 bg-primary text-white p-3"> 
+            Column 1 
+        </div> 
+        <div class="col-md-4 bg-success text-white p-3"> 
+            Column 2 
+        </div> 
+        <div class="col-md-4 bg-danger text-white p-3"> 
+            Column 3 
+        </div> 
+</div> 
+</div> 
+<!-- Button --> 
+<div class="container text-center mt-4"> 
+<button class="btn btn-warning">Click Me</button> 
+</div> 
+</body> 
+</html> 
+  
+4.. Write a JavaScript program to validate form inputs (e.g., email, empty fields). 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Form Validation</title> 
+    <script> 
+        function validateForm()  
+        { 
+            // Get values 
+            var name = document.getElementById("name").value; 
+            var email = document.getElementById("email").value; 
+            // Check empty fields 
+            if (name == "" || email == "") { 
+                alert("All fields must be filled!"); 
+                return false; 
+            } 
+            // Email validation (simple pattern) 
+            var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; 
+            if (!email.match(pattern)) { 
+                alert("Enter a valid email!"); 
+                return false; 
+            } 
+            alert("Form submitted successfully!"); 
+            return true; 
+        } 
+    </script> 
+</head> 
+<body> 
+<h2>Form Validation</h2> 
+<form onsubmit="return validateForm()"> 
+Name: <input type="text" id="name"><br><br> 
+Email: <input type="text" id="email"><br><br> 
+<input type="submit" value="Submit"> 
+</form> 
+</body> 
+</html> 
+Create a web page that uses JavaScript to display dynamic content using DOM. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>DOM Example</title> 
+    <script> 
+        function showMessage() { 
+            // Access element and change content 
+            document.getElementById("output").innerHTML = "Hello! This is dynamic content."; 
+        } 
+    </script> 
+</head> 
+<body> 
+<h2>DOM Manipulation Example</h2> 
+<button onclick="showMessage()">Click Me</button> 
+<p id="output"></p> 
+</body> 
+</html> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5.. Write a JavaScript program for a simple calculator using functions and switch-case. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Simple Calculator</title> 
+    <script> 
+        function calculate() { 
+            var num1 = parseFloat(document.getElementById("n1").value); 
+            var num2 = parseFloat(document.getElementById("n2").value); 
+            var op = document.getElementById("op").value; 
+            var result; 
+            switch(op) { 
+                case "+": 
+                    result = num1 + num2; 
+                    break; 
+                case "-": 
+                    result = num1 - num2; 
+                    break; 
+                case "*": 
+                    result = num1 * num2; 
+                    break; 
+                case "/": 
+                    result = num1 / num2; 
+                    break; 
+                default: 
+                    result = "Invalid operation"; 
+            } 
+            document.getElementById("result").innerHTML = "Result: " + result; 
+        } 
+    </script> 
+</head> 
+<body> 
+<h2>Simple Calculator</h2> 
+Number 1: <input type="text" id="n1"><br><br> 
+Number 2: <input type="text" id="n2"><br><br> 
+Operation: 
+<select id="op"> 
+    <option value="+">Addition</option> 
+    <option value="-">Subtraction</option> 
+    <option value="*">Multiplication</option> 
+    <option value="/">Division</option> 
+</select><br><br> 
+<button onclick="calculate()">Calculate</button> 
+<p id="result"></p> 
+</body> 
+</html> 
+ 
+ 
+ 
+ 
+ 
+ 
+6... Design a PHP script to display "Welcome" message and current date & time. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>PHP Date and Time</title> 
+</head> 
+<body style="text-align:center; margin-top:50px; font-family:Arial;"> 
+<?php 
+date_default_timezone_set("Asia/Kolkata"); 
+echo "<h1>Welcome</h1>"; 
+echo "<h3>Current Date: " . date("d-m-Y") . "</h3>"; 
+echo "<h3>Current Time: " . date("h:i:s A") . "</h3>"; 
+?> 
+</body> 
+</html> 
+Write a PHP program to accept form input and display it using the POST method. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>PHP Form</title> 
+</head> 
+<body> 
+<h2>Simple Form</h2> 
+<form method="POST"> 
+    Name: <input type="text" name="name"><br><br> 
+    Email: <input type="text" name="email"><br><br> 
+    <input type="submit" value="Submit"> 
+</form> 
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $name = $_POST['name']; 
+    $email = $_POST['email']; 
+    echo "<h3>Entered Details:</h3>"; 
+    echo "Name: " . $name . "<br>"; 
+    echo "Email: " . $email; 
+} 
+?> 
+</body> 
+</html> 
+ 
+ 
+7.. Implement a PHP program for string manipulation (e.g., reverse, length, substring). 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>String Manipulation</title> 
+</head> 
+<body> 
+<h2>String Manipulation</h2> 
+<form method="POST"> 
+    Enter String: <input type="text" name="str"><br><br> 
+    <input type="submit" value="Submit"> 
+</form> 
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $str = $_POST['str']; 
+    echo "<h3>Results:</h3>"; 
+    // Length 
+    echo "Length: " . strlen($str) . "<br>"; 
+    // Reverse 
+    echo "Reverse: " . strrev($str) . "<br>"; 
+    // Substring (first 5 characters) 
+    echo "Substring (first 5 chars): " . substr($str, 0, 5); 
+} 
+?> 
+</body> 
+</html> 
+Create a PHP script to store and display values in an array. 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Array Input</title> 
+</head> 
+<body> 
+<h2>Enter 3 Names</h2> 
+<form method="POST"> 
+    Name 1: <input type="text" name="name[]"><br><br> 
+    Name 2: <input type="text" name="name[]"><br><br> 
+    Name 3: <input type="text" name="name[]"><br><br> 
+    <input type="submit" value="Submit"> 
+</form> 
+<?php 
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+    $names = $_POST['name']; // array 
+    echo "<h3>Names Entered:</h3>"; 
+    foreach ($names as $n) { 
+        echo $n . "<br>"; 
+    } 
+} 
+?> 
+</body> 
+</html> 
+ 
